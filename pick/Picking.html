@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pick face</title>
+
+    <script src="../../lib/webgl-utils.js"></script>
+    <script src="../../lib/webgl-debug.js"></script>
+    <script src="../../lib/cuon-utils.js"></script>
+    <script src="../../lib/cuon-matrix.js"></script>
+    <link rel="stylesheet" href="Picking.css">
+
+</head>
+
+<body onload="main()" onkeypress="keyboard(event)">
+    <audio src="Elumium.mp3" id="my_audio" loop="loop"></audio>
+    <form>
+        <input type="color" id="color" name="colorpicker" onchange="hexToRgb(colorpicker.value)" style='width:100px;position:absolute;'>
+    </form>
+    <p id="hex"></p>
+    <canvas id="webgl">
+      Please use a browser that supports "canvas"
+    </canvas>
+
+    <!-- <div class="bottom-bar bar"></div> -->
+    <!-- <img src="img/" id="img" alt=""> -->
+
+</body>
+<script src="VD.js"></script>
+
+</html>
